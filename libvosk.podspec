@@ -8,8 +8,6 @@ Pod::Spec.new do |s|
     s.license          = { :type => 'BSD', :file => '../LICENSE' }
     s.author           = { 'Your Company' => 'email@example.com' }
     s.platform = :ios, '11.0'
-    # s.source           = { :path => '.' }
-    # s.vendored_frameworks = "libvosk.xcframework"
-    s.source           = { :http => "https://alphacephei.com/test-other/david-schlauch/VoskApiTest_0.3.38.zip" }
-    s.vendored_frameworks = "**/libvosk.xcframework"
+    s.source           = { :git => "https://github.com/jtdLab/TESTING.git" }
+    s.vendored_frameworks = "libvosk.xcframework"
   end
