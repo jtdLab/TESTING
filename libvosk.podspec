@@ -1,6 +1,6 @@
 # To learn more about a Podspec, see http://guides.cocoapods.org/syntax/podspec.html
 Pod::Spec.new do |s|
-    s.name             = 'libvosk'
+    s.name             = 'Vosk'
     s.version          = '0.3.38'
     s.summary          = 'Vosk iOS.'
     s.description      = "Vosk for iOS."
@@ -8,11 +8,6 @@ Pod::Spec.new do |s|
     s.license          = { :type => 'BSD', :file => '../LICENSE' }
     s.author           = { 'Your Company' => 'email@example.com' }
     s.source           = { :git => "https://github.com/jtdLab/TESTING.git" }
-    # telling CocoaPods not to remove framework
-    s.preserve_paths = "libvosk.xcframework"
-    # telling linker to include libvosk framework
-    # s.xcconfig = { "OTHER_LDFLAGS" => "-framework libvosk -l libvosk" }
-    s.xcconfig = { "OTHER_LDFLAGS" => "-l libvosk" }
     # including Vosk framework
     s.vendored_frameworks = "libvosk.xcframework"
   end
