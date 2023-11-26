@@ -10,7 +10,7 @@ Pod::Spec.new do |s|
     s.platform = :ios, '11.0'
     s.source           = { :git => "https://github.com/jtdLab/TESTING.git" }
     # telling CocoaPods not to remove framework
-    s.preserve_paths = "libvosk.framework"
+    s.preserve_paths = "libvosk.xcframework"
     # telling linker to include libvosk framework
     s.xcconfig = { "OTHER_LDFLAGS" => "-framework libvosk", 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'i386' }
     # including Vosk framework
