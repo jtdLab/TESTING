@@ -9,7 +9,7 @@ Pod::Spec.new do |s|
     s.author           = { 'Your Company' => 'email@example.com' }
     s.source           = { :git => "https://github.com/jtdLab/TESTING.git" }
     # telling CocoaPods not to remove framework
-    s.preserve_paths = "libvosk.xcframework"
+    s.preserve_paths = "libvosk.xcframework/**/*"
     # telling linker to include libvosk framework
     s.xcconfig = { "OTHER_LDFLAGS" => "-framework libvosk -l libvosk" }
     # including Vosk framework
