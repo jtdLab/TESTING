@@ -8,6 +8,8 @@ Pod::Spec.new do |s|
     s.license          = { :type => 'BSD', :file => '../LICENSE' }
     s.author           = { 'Your Company' => 'email@example.com' }
     s.source           = { :git => "https://github.com/jtdLab/TESTING.git" }
+    s.preserve_paths = 'libvosk.xcframework/**/*'
+    # s.xcconfig = { 'OTHER_LDFLAGS' => '-framework libvosk' }
     # including Vosk framework
     s.vendored_frameworks = "libvosk.xcframework"
   end
