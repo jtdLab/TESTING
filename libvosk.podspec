@@ -7,7 +7,7 @@ Pod::Spec.new do |s|
     s.homepage         = 'http://example.com'
     s.license          = { :type => 'BSD', :file => '../LICENSE' }
     s.author           = { 'Your Company' => 'email@example.com' }
-    s.platform = :ios, '11.0'
+    s.platform = :ios, '9.0'
     s.source           = { :git => "https://github.com/jtdLab/TESTING.git" }
     # telling CocoaPods not to remove framework
     s.preserve_paths = "libvosk.xcframework"
