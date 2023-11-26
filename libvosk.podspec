@@ -1,6 +1,6 @@
 # To learn more about a Podspec, see http://guides.cocoapods.org/syntax/podspec.html
 Pod::Spec.new do |s|
-    s.name             = 'Vosk'
+    s.name             = 'libvosk'
     s.version          = '0.3.38'
     s.summary          = 'Vosk iOS.'
     s.description      = "Vosk for iOS."
