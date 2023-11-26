@@ -11,7 +11,7 @@ Pod::Spec.new do |s|
     # telling CocoaPods not to remove framework
     s.preserve_paths = "libvosk.xcframework"
     # telling linker to include libvosk framework
-    s.xcconfig = { "OTHER_LDFLAGS" => "-framework libvosk" }
+    # s.xcconfig = { "OTHER_LDFLAGS" => "-framework libvosk" }
     # including Vosk framework
     s.vendored_frameworks = "libvosk.xcframework"
   end
