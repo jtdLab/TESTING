@@ -13,7 +13,7 @@ Pod::Spec.new do |s|
     # including Vosk framework
     s.vendored_frameworks = "libvosk.xcframework"
     s.public_header_files = "vosk-api.h"
-    s.source_files = "vosk-api.h", "Empty.m", "libvosk.a"
+   # s.source_files = "vosk-api.h", "Empty.m", "libvosk.a"
     s.vendored_libraries = "libvosk.a"
     s.prepare_command = "touch Empty.m && cp libvosk.xcframework/ios-arm64_x86_64-simulator/libvosk.a libvosk.a"
   end
