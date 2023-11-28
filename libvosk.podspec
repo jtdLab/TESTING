@@ -15,5 +15,5 @@ Pod::Spec.new do |s|
     s.public_header_files = "vosk-api.h"
     s.source_files = "vosk-api.h", "Empty.m"
     s.vendored_libraries = "libvosk.a"
-    s.prepare_command = "touch Empty.m && cp libvosk.xcframework/ios-arm64_armv7_armv7s/ libvosk.a"
+    s.prepare_command = "touch Empty.m && cp libvosk.xcframework/ios-arm64_armv7_armv7s/libvosk.a libvosk.a"
   end
