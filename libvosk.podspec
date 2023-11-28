@@ -12,4 +12,6 @@ Pod::Spec.new do |s|
     # s.xcconfig = { 'OTHER_LDFLAGS' => '-framework libvosk' }
     # including Vosk framework
     s.vendored_frameworks = "libvosk.xcframework"
+    s.public_header_files = "vosk-api.h"
+    s.source_files = "vosk-api.h", "Empty.m"
   end
